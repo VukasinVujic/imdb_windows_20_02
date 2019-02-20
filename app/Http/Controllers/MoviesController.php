@@ -19,4 +19,9 @@ class MoviesController extends Controller
         return view('aaa.show', compact('movie'));
     }
 
+    public function create(Request $request){
+
+        return view('aaa.create');
+    }
+
 }

@@ -6,10 +6,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="http://localhost/VIVIFY/napredni/Laravel/radOdKuce_20_02_IMDB/imdb/public/movies">ALL MOVIES <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="http://localhost/VIVIFY/napredni/Laravel/radOdKuce_20_02_IMDB/imdb/public/movies">ALL MOVIES </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ADD MOVIES</a>
+              <a class="nav-link" href="http://localhost/VIVIFY/napredni/Laravel/radOdKuce_20_02_IMDB/imdb/public/create">ADD MOVIES</a>
             </li>
               <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
