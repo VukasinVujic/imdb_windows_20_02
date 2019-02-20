@@ -7,9 +7,12 @@ SHOW BLADE
 @endsection
 
 @section('content')
-
-{{ $movie->title }}
-<br><br>
+<ul>
+<li>{{ $movie->title }}</li>
+<li>{{ $movie->genre }}</li>
+<li>{{ $movie->director }}</li>
+<li>{{ $movie->year }}</li>
+</ul>
     
 @endsection
 
