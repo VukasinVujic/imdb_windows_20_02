@@ -14,6 +14,15 @@ SHOW BLADE
 <li>{{ $movie->director }}</li>
 <li>{{ $movie->year }}</li>
 </ul>
+
+@foreach ($movie->comments as $comment)
+
+<div class='p-4 alert-success'>
+        <div class="text-muted"> {{ $comment->content }}   </div>
+    
+    </div>        
+@endforeach
+
 </div>    
 @endsection
 
