@@ -7,7 +7,7 @@ INDEX BLADE
 @endsection
 
 @section('content')
-
+<div class="container">
 
 @foreach ($movies as $movie)
 
@@ -16,7 +16,7 @@ INDEX BLADE
 @endforeach
 <br><br>
 
-    
+</div>    
 @endsection
 
 

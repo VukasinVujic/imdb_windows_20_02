@@ -19,9 +19,25 @@ class MoviesController extends Controller
         return view('aaa.show', compact('movie'));
     }
 
-    public function create(Request $request){
+    public function create(){
 
         return view('aaa.create');
+    }
+
+    public function store(Request $request)
+    {
+        var_dump('ddsfsdfds');
+
+        $request->validate([
+            'title'=>'required|min:3',
+            'genre'=> 'required|min:3',
+            'director'=> 'required',
+            'year'=> 'required|numeric|between:1900,'.date('Y'),
+            'storyline' => 'required'
+            ]);
+            Movie::create($request->all());
+
+           return redirect('http://localhost/VIVIFY/napredni/Laravel/radOdKuce_20_02_IMDB/imdb/public/movies');
     }
 
 }
