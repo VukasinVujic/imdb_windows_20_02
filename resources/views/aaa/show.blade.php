@@ -23,6 +23,30 @@ SHOW BLADE
     </div>        
 @endforeach
 
-</div>    
+
+<div class="container">
+        <p>Leave a comment</p>
+ 
+        <div class="container">
+          <form method="POST" action="{{ route('addingComment', ['movie_id' => $movie->id]) }}">
+            @csrf
+            <div class="form-group row">
+              <textarea
+                id="textarea"
+                name="content"
+                cols="40"
+                rows="5"
+                class="form-control {{ $errors->has('content') ? 'is-invalid' : '' }}"></textarea>
+                @include('partials.invalid-feedback', ['field' => 'content'])
+            </div>
+            <div class="form-group row">
+              <div class="offset-4 col-8">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
 @endsection
 

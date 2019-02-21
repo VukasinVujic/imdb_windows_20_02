@@ -26,7 +26,6 @@ class MoviesController extends Controller
 
     public function store(Request $request)
     {
-        var_dump('ddsfsdfds');
 
         $request->validate([
             'title'=>'required|min:3',

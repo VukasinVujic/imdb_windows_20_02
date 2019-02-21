@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('movies', 'MoviesController@index')->name('allmovies');
-Route::get('/movies/{id}', 'MoviesController@show');
+Route::get('/movies/{id}', 'MoviesController@show')->name('movie');
 Route::get('/create', 'MoviesController@create');
 Route::post('/create', 'MoviesController@store')->name('createMovie');
+Route::post('/movies/{id}', 'CommentsController@store')->name('addingComment');
