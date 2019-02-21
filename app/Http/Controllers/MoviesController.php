@@ -37,7 +37,7 @@ class MoviesController extends Controller
             ]);
             Movie::create($request->all());
 
-           return redirect('http://localhost/VIVIFY/napredni/Laravel/radOdKuce_20_02_IMDB/imdb/public/movies');
+           return redirect('/movies');
     }
 
 }
