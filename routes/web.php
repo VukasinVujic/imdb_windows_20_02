@@ -15,8 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('movies', 'MoviesController@index')->name('allmovies');
 Route::get('/movies/{id}', 'MoviesController@show')->name('movie');
+Route::post('/movies/{id}', 'CommentsController@store')->name('addingComment');
+Route::get('/genre/{genre}', 'GenresController@show')->name('show_same_genre');
+
 Route::get('/create', 'MoviesController@create');
 Route::post('/create', 'MoviesController@store')->name('createMovie');
-Route::post('/movies/{id}', 'CommentsController@store')->name('addingComment');
+Route::get('movies', 'MoviesController@index')->name('allmovies');

@@ -10,7 +10,8 @@ SHOW BLADE
 <div class="container">
 <ul>
 <li>{{ $movie->title }}</li>
-<li>{{ $movie->genre }}</li>
+{{-- <li>{{ $movie->genre }}</li> --}}
+<li><a href="{{ route('show_same_genre', ['genre' => $movie->genre]) }}">aaaaaaaaaaaa</a></li>
 <li>{{ $movie->director }}</li>
 <li>{{ $movie->year }}</li>
 </ul>
