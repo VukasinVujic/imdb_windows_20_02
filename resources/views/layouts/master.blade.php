@@ -10,9 +10,17 @@
 <body>
 
     @include('layouts.navbar')
+
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+
+
     @yield('title')
     <br>
     @yield('content')
+        @include('layouts.sidebar')
+        </div>
+    </div>
     
 </body>
 </html>

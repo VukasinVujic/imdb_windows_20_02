@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Movie;
 class MoviesController extends Controller
 {
+
+    protected $latest_movie;
+
     public function index()
     {
         $movies = Movie::all();
